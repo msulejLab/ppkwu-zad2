@@ -2,7 +2,7 @@ package pl.ppkwu.zad.impl;
 
 import pl.ppkwu.zad.api.RetryCallback;
 
-public class RetryCallbackImpl {
+public class RetryCallbackImpl implements RetryCallback {
 
     private Boolean result = false;
 
@@ -13,5 +13,9 @@ public class RetryCallbackImpl {
         }
 
         return false;
+    }
+
+    public void setResult(boolean result) {
+        this.result = result;
     }
 }
