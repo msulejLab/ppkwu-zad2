@@ -2,7 +2,7 @@ package pl.ppkwu.zad.api;
 
 public interface FileLibrary {
 
-    void writeToFile(String correctString, String wrongString, String fileName);
+    void writeToFile(String fileName, String correctString, String wrongString);
 
     void setRetryCallback(RetryCallback retryCallback);
 }
