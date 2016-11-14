@@ -5,4 +5,6 @@ public interface FileLibrary {
     void writeToFile(String fileName, String correctString, String wrongString);
 
     void setRetryCallback(RetryCallback retryCallback);
+
+    void setExitCallback(ExitCallback exitCallback);
 }
