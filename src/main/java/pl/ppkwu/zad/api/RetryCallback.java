@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 
 public interface RetryCallback extends Callable<Boolean> {
 
-    Boolean call() throws Exception;
+    Boolean call();
 
     void setResult(boolean result);
 }
